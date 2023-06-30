@@ -10,6 +10,6 @@ workflow {
     TO_OME_TIF()
 }
 
-workflow TO_ZARR {
+workflow TO_ZARR_RUN {
     TO_ZARR()
 }
