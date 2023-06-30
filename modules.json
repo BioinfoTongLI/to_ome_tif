@@ -1,0 +1,39 @@
+{
+    "name": "",
+    "homePage": "",
+    "repos": {
+        "git@github.com:BioinfoTongLI/modules.git": {
+            "modules": {
+                "sanger": {
+                    "bioinfotongli/bioformats2raw": {
+                        "branch": "develop",
+                        "git_sha": "58ea2fde7f93d1dcd09babfb307916be99c9e8f5",
+                        "installed_by": [
+                            "bioinfotongli/to_ome_tiff",
+                            "to_ome_tiff"
+                        ]
+                    },
+                    "bioinfotongli/raw2ometiff": {
+                        "branch": "develop",
+                        "git_sha": "58ea2fde7f93d1dcd09babfb307916be99c9e8f5",
+                        "installed_by": [
+                            "bioinfotongli/to_ome_tiff",
+                            "to_ome_tiff"
+                        ]
+                    }
+                }
+            },
+            "subworkflows": {
+                "sanger": {
+                    "bioinfotongli/to_ome_tiff": {
+                        "branch": "develop",
+                        "git_sha": "9aabc1d85ae850eb215f89f884e96db6f033cbf7",
+                        "installed_by": [
+                            "subworkflows"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

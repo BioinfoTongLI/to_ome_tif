@@ -1,0 +1,53 @@
+name: "bioinfotongli_raw2ometiff"
+## TODO nf-core: Add a description of the module and list keywords
+description: Java application to convert a directory of tiles to an OME-TIFF pyramid. This is the second half of iSyntax/.mrxs => OME-TIFF conversion.
+keywords:
+  - image format
+  - image conversion
+  - open microscopy
+tools:
+  - "bioinfotongli":
+      ## TODO nf-core: Add a description and other details for the software below
+      description: ""
+      homepage: "https://github.com/glencoesoftware/raw2ometiff"
+      documentation: ""
+      tool_dev_url: ""
+      doi: ""
+      licence: "https://github.com/glencoesoftware/raw2ometiff/blob/master/LICENSE.txt"
+
+## TODO nf-core: Add a description of all of the variables used as input
+input:
+  # Only when we have meta
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test', single_end:false ]
+  #
+  ## TODO nf-core: Delete / customise this example input
+  - ome_zarr:
+      type: file
+      description: zarr file folder
+      pattern: "*.{ome.zarr,.zarr}"
+
+## TODO nf-core: Add a description of all of the variables used as output
+output:
+  #Only when we have meta
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test', single_end:false ]
+  #
+  - versions:
+      type: file
+      description: File containing software versions
+      pattern: "versions.yml"
+  ## TODO nf-core: Delete / customise this example output
+  - ome_tiff:
+      type: file
+      description: Convereted pyramidal ome.tiff file
+      pattern: "*.{ome.tiff,ome.tif}"
+
+authors:
+  - "@BioinfoTongLI"
