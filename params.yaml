@@ -1,0 +1,3 @@
+files_in:
+  - [{'id':"test1"}, 'image-path1']
+  - [{'id':"test2"}, 'image-path2']
